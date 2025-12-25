@@ -1,0 +1,1 @@
+"One @DATE1 day, my uncle took me to @CAPS1 point to go on a roller @CAPS2, the @CAPS3 @CAPS4. The line was so long, we waited at least @NUM1 hours. Time went by slowly and we finally got on. After, we went to the @CAPS5 thrill @CAPS6, which took about an hour and a half."

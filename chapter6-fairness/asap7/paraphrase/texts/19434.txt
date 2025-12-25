@@ -1,0 +1,1 @@
+I was patient when my birthday came. I am waiting for my party at my dads house this @DATE1. My birthday was @NUM1 on @DATE2. I am getting a @CAPS1« from my dad for my birthday. I was patient when my birthday come. I am waiting for my party at my dads house this @DATE1 my birthday was on @NUM1 on @DATE2. I am getting a @CAPS1« from my dad for my birthday.
