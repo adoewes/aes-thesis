@@ -1,0 +1,60 @@
+GET ESSAY CORRECTIONS FROM OPENAI:
+==================================
+get_openai_correction_train.ipynb
+get_openai_correction_test.ipynb
+
+APPLY CORRECTIONS TO THE ORIGINAL ESSAY (5 CORRECTIONS):
+========================================================
+- apply_corrections_train.ipynb
+- apply_corrections_test.ipynb
+
+
+GET TEXT ERRORS FROM ESSAY (MAXIMUM: 5 TYPOS + 2 PREPOSITION ERRORS + 5 SUBJECT-VERB AGREEMENT ERRORS):
+=======================================================================================================
+get_text_error_test.ipynb --> call Python file: create_text_error.py
+get_text_error_train.ipynb --> call Python file: create_text_error.py
+
+APPLY ERRORS TO THE ORIGINAL ESSAYS (SAMPLED 5 ERRORS):
+=======================================================
+apply_errors_train.ipynb
+apply_errors_test.ipynb
+
+
+CREATE ESSAY FEATURES:
+=====================
+create_essay_features_from_asap1.ipynb				--> All original essays   : 1783
+create_essay_features_from_asap1_counterfactual_train.ipynb	--> Counterfactual essays : 3100 (100 essays * 31 combinations)
+create_essay_features_from_asap1_counterfactual_test.ipynb	--> Counterfactual essays : 3100 (100 essays * 31 combinations)
+
+
+RETRAINING NEW MODEL USING BOTH POSITIVE AND NEGATIVE COUNTERFACTUALS:	
+======================================================================
+XGBoost_SBert_inter10_asap1_776_retrain_both_ori.ipynb
+
+
+THE ACCURACY OF PREDICTING COUNTERFACTUALS BEFORE RETRAINING (USING ORIGINAL MODEL):
+====================================================================================
+- The accuracy to predict better essays (positive CFs):
+get_score_counterfactuals_test_776_better.ipynb
+
+- The accuracy to predict worse essays (negative CFs):
+get_score_counterfactuals_test_776_worse.ipynb
+
+
+THE ACCURACY OF PREDICTING COUNTERFACTUALS AFTER RETRAINING (USING COUNTERFACTUALS):
+====================================================================================
+- The accuracy to predict better essays (positive CFs):
+get_score_counterfactuals_test_newmodel_both_776_better.ipynb
+
+- The accuracy to predict worse essays (negative CFs):
+get_score_counterfactuals_test_newmodel_both_776_worse.ipynb
+
+
+-> EXTRA:
+=========
+
+TO DETECT PREPOSITION ERRORS:
+=============================
+create_sva_prepos_features.ipynb
+
+

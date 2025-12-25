@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern, readable font */
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5; /* Neutral background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container-feedback {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Status Section */
+.status {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 8px solid #00796b; /* Teal border for status */
+    background: #e0f2f1; /* Light teal background */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.status p strong {
+    color: #d32f2f; /* Coral for important values */
+}
+
+.status .final-status {
+    color: #c62828; /* Deep red for final status */
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* Minimum Solution Section */
+.minimum-solution {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fafafa; /* Light grey background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.minimum-solution h2 {
+    font-size: 24px;
+    color: #00796b; /* Teal for section heading */
+    border-bottom: 2px solid #00796b;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.minimum-solution h2:hover {
+    color: #004d40; /* Darker teal on hover */
+    border-color: #004d40;
+}
+
+.minimum-changes-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #424242; /* Dark grey for title */
+}
+
+.changes-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.changes-list li {
+    background: #fff8e1; /* Light cream background */
+    border: 1px solid #ffecb3;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+.changes-list li:hover {
+    background: #ffecb3; /* Slightly darker cream on hover */
+}
+
+/* New Score */
+.new-score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #388e3c; /* Dark green for the new score */
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Explanations Section */
+.explanations h2 {
+    font-size: 24px;
+    color: #00796b; /* Teal for section heading */
+    border-bottom: 2px solid #00796b;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.explanations h2:hover {
+    color: #004d40; /* Darker teal on hover */
+    border-color: #004d40;
+}
+
+.explanation-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.explanation-list li {
+    margin-bottom: 10px;
+}
+
+.explanation-list strong {
+    color: #d32f2f; /* Coral for emphasized text */
+    background: none; /* Remove yellow background */
+    padding: 2px 4px; /* Minimal padding */
+    border-radius: 4px;
+    font-weight: bold; /* Make emphasis stand out */
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
